@@ -2,7 +2,7 @@ const newsContainer = document.getElementById('news-container');
 
 async function fetchNews() {
     try {
-        const response = await fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=YOUR_API_KEY');
+        const response = await fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=1b27e744a40b4d82af95b907f77bfd7e');
         const data = await response.json();
         displayNews(data.articles);
     } catch (error) {
